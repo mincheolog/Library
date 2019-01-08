@@ -21,6 +21,7 @@ app.get('/man', (req, res) =>{
 });
 
 app.get('/login', (req, res) =>{
+    //test source
     connection.query("SELECT * FROM user WHERE user_id=\'"+req.body.user_id+"\' and user_pw=\'"+req.body.user_pw+"\'", (err, rows) => {
         if(err) throw err;
 
